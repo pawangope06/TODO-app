@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #main-heading {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 200px 150px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    align-items: center;
+  }
+  
+  #todo-input, #todo-date, #todo-priority {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .todo-container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .todo-item.completed {
+    text-decoration: line-through;
+    background-color: #d4edda;
+  }
+  
+  .todo-item span {
+    flex: 1;
+  }
+  
+  .todo-item button {
+    margin-left: 10px; /* Add spacing between buttons */
+  }
+  
+  .todo-item button:first-child {
+    margin-left: 0; /* Ensure the first button has no unnecessary margin */
+  }
+  
+  .btn-todo, .btn-clear, .btn-delete {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .btn-todo {
+    background-color: #007bff;
+  }
+  
+  .btn-delete {
+    background-color: #dc3545;
+  }
+  
+  .btn-clear {
+    display: block;
+    margin: 20px auto;
+    background-color: #28a745;
+  }
+  
